@@ -1,0 +1,208 @@
+export type Category = "Sustainability" | "UX/UI" | "Social Impact" | "Education" | "Healthcare" | "Transportation" | "Finance" | "Food & Agriculture";
+export type Difficulty = "Quick Sprint" | "Medium" | "Deep Dive";
+
+export interface Problem {
+  id: number;
+  title: string;
+  hmw: string;
+  context: string;
+  persona: string;
+  category: Category;
+  difficulty: Difficulty;
+}
+
+export const categories: Category[] = [
+  "Sustainability",
+  "UX/UI",
+  "Social Impact",
+  "Education",
+  "Healthcare",
+  "Transportation",
+  "Finance",
+  "Food & Agriculture",
+];
+
+export const difficulties: Difficulty[] = ["Quick Sprint", "Medium", "Deep Dive"];
+
+export const problems: Problem[] = [
+  {
+    id: 1,
+    title: "Café Cup Crisis",
+    hmw: "How might we reduce single-use plastic cup waste in local cafés?",
+    context: "Over 16 billion disposable cups are used each year, most of which are not recyclable. Local cafés contribute significantly to this waste stream, yet many customers resist reusable alternatives.",
+    persona: "A 28-year-old daily coffee commuter who values convenience but feels guilty about environmental impact.",
+    category: "Sustainability",
+    difficulty: "Quick Sprint",
+  },
+  {
+    id: 2,
+    title: "Senior Digital Divide",
+    hmw: "How might we make smartphone interfaces more intuitive for elderly users?",
+    context: "Over 40% of adults aged 65+ struggle with basic smartphone tasks. Current UI patterns assume digital fluency that many seniors lack, creating isolation from digital services.",
+    persona: "A 72-year-old retiree who wants to video-call grandchildren but finds modern apps overwhelming.",
+    category: "UX/UI",
+    difficulty: "Medium",
+  },
+  {
+    id: 3,
+    title: "Homework Gap",
+    hmw: "How might we ensure students without home internet can complete digital assignments?",
+    context: "Nearly 17 million children in the US lack reliable internet at home. This 'homework gap' disproportionately affects low-income and rural communities, widening educational inequality.",
+    persona: "A 14-year-old student in a rural town who relies on a parent's phone hotspot to submit schoolwork.",
+    category: "Education",
+    difficulty: "Deep Dive",
+  },
+  {
+    id: 4,
+    title: "Mental Health Check-In",
+    hmw: "How might we normalize daily mental health self-assessment for young professionals?",
+    context: "Burnout rates among 25-35 year olds have surged. Despite growing awareness, most people don't track their mental state until a crisis occurs.",
+    persona: "A 30-year-old startup employee who dismisses stress as 'part of the job' until it becomes debilitating.",
+    category: "Healthcare",
+    difficulty: "Quick Sprint",
+  },
+  {
+    id: 5,
+    title: "Last-Mile Delivery",
+    hmw: "How might we reduce carbon emissions from last-mile package deliveries in cities?",
+    context: "Last-mile delivery accounts for 53% of total shipping costs and generates significant urban pollution. Failed delivery attempts multiply both cost and emissions.",
+    persona: "An apartment dweller who is never home for deliveries, leading to multiple re-delivery attempts.",
+    category: "Transportation",
+    difficulty: "Deep Dive",
+  },
+  {
+    id: 6,
+    title: "Food Desert Navigator",
+    hmw: "How might we improve access to fresh produce in urban food deserts?",
+    context: "23.5 million Americans live in food deserts where the nearest grocery store is over a mile away. Convenience stores and fast food fill the gap with unhealthy options.",
+    persona: "A single mother of two in an inner-city neighborhood without a car, relying on corner stores for meals.",
+    category: "Food & Agriculture",
+    difficulty: "Medium",
+  },
+  {
+    id: 7,
+    title: "Micro-Savings Nudge",
+    hmw: "How might we help gig workers build emergency savings through micro-contributions?",
+    context: "63% of Americans can't cover a $500 emergency expense. Gig workers with irregular income find traditional savings plans impossible to maintain.",
+    persona: "A 25-year-old rideshare driver whose income varies wildly week to week and has zero savings.",
+    category: "Finance",
+    difficulty: "Medium",
+  },
+  {
+    id: 8,
+    title: "Accessible Voting",
+    hmw: "How might we make the voting process more accessible for people with physical disabilities?",
+    context: "Many polling stations remain physically inaccessible. Complex ballot designs and lack of assistive technology further exclude disabled voters from democratic participation.",
+    persona: "A wheelchair user who has to travel 30 minutes to the only accessible polling station in the district.",
+    category: "Social Impact",
+    difficulty: "Deep Dive",
+  },
+  {
+    id: 9,
+    title: "Textbook Affordability",
+    hmw: "How might we reduce the financial burden of college textbooks for students?",
+    context: "The average student spends $1,200 per year on textbooks. Many students skip purchasing required materials, negatively impacting their grades and learning outcomes.",
+    persona: "A first-generation college student working part-time who must choose between buying textbooks and paying rent.",
+    category: "Education",
+    difficulty: "Medium",
+  },
+  {
+    id: 10,
+    title: "Medication Adherence",
+    hmw: "How might we help patients with chronic conditions remember and manage multiple medications?",
+    context: "50% of medications for chronic diseases are not taken as prescribed, costing the US healthcare system $300 billion annually and leading to preventable hospitalizations.",
+    persona: "A 65-year-old diabetic patient managing five daily medications with complex timing requirements.",
+    category: "Healthcare",
+    difficulty: "Medium",
+  },
+  {
+    id: 11,
+    title: "Fashion Waste Loop",
+    hmw: "How might we encourage consumers to repair clothing instead of discarding it?",
+    context: "The average person throws away 70 pounds of clothing per year. Fast fashion culture has made repair seem more expensive and less convenient than replacement.",
+    persona: "A 22-year-old college student who buys cheap clothing online and discards it after a few wears.",
+    category: "Sustainability",
+    difficulty: "Quick Sprint",
+  },
+  {
+    id: 12,
+    title: "Commuter Stress Relief",
+    hmw: "How might we transform dead commute time into a wellbeing-boosting experience?",
+    context: "The average American commutes 27 minutes each way. Long commutes correlate with higher rates of anxiety, obesity, and social isolation.",
+    persona: "A 35-year-old suburbanite with a 45-minute train commute who arrives at work already exhausted.",
+    category: "Transportation",
+    difficulty: "Quick Sprint",
+  },
+  {
+    id: 13,
+    title: "Neighborhood Safety Net",
+    hmw: "How might we strengthen community bonds in large apartment complexes to reduce social isolation?",
+    context: "Urban loneliness is rising—46% of US adults report feeling lonely. In large apartment buildings, residents often live side-by-side for years without ever speaking.",
+    persona: "A recently relocated 40-year-old professional who knows no one in their 200-unit building.",
+    category: "Social Impact",
+    difficulty: "Medium",
+  },
+  {
+    id: 14,
+    title: "Farm-to-Fork Tracker",
+    hmw: "How might we give consumers transparent insight into where their food comes from?",
+    context: "Only 1 in 3 consumers trusts food labeling claims. Complex supply chains make it nearly impossible to verify sourcing, freshness, or ethical practices.",
+    persona: "A health-conscious parent who wants to ensure their family eats ethically sourced, chemical-free food.",
+    category: "Food & Agriculture",
+    difficulty: "Deep Dive",
+  },
+  {
+    id: 15,
+    title: "Error Message Empathy",
+    hmw: "How might we redesign software error messages to be helpful instead of frustrating?",
+    context: "Users encounter error messages daily, yet most are filled with jargon or codes. Poor error UX leads to abandoned tasks, support tickets, and lost trust.",
+    persona: "A non-technical small business owner who panics whenever their POS system shows a cryptic error.",
+    category: "UX/UI",
+    difficulty: "Quick Sprint",
+  },
+  {
+    id: 16,
+    title: "Youth Financial Literacy",
+    hmw: "How might we teach teenagers fundamental financial skills before they leave school?",
+    context: "Only 17 states require a personal finance course for high school graduation. Most young adults enter the workforce without understanding budgets, credit, or taxes.",
+    persona: "A 17-year-old high school senior about to open their first bank account with no guidance.",
+    category: "Finance",
+    difficulty: "Deep Dive",
+  },
+  {
+    id: 17,
+    title: "Patient Wait Anxiety",
+    hmw: "How might we reduce perceived wait times and anxiety in hospital emergency rooms?",
+    context: "The average ER wait is 40 minutes, but uncertainty about wait duration dramatically increases patient stress. Lack of information compounds fear and frustration.",
+    persona: "A parent with a sick toddler in a crowded ER, unsure if they'll wait 20 minutes or 4 hours.",
+    category: "Healthcare",
+    difficulty: "Quick Sprint",
+  },
+  {
+    id: 18,
+    title: "Onboarding Overload",
+    hmw: "How might we simplify new-user onboarding for complex SaaS products without losing key features?",
+    context: "75% of users abandon new apps within the first week. Feature-rich products overwhelm newcomers, but removing features frustrates power users.",
+    persona: "A small business owner trying a new project management tool who gives up after 10 minutes of setup.",
+    category: "UX/UI",
+    difficulty: "Medium",
+  },
+  {
+    id: 19,
+    title: "Plastic-Free Groceries",
+    hmw: "How might we eliminate single-use plastic packaging from everyday grocery shopping?",
+    context: "Grocery packaging accounts for nearly 40% of all plastic produced. Alternatives exist but are often more expensive or less convenient for both stores and shoppers.",
+    persona: "An eco-conscious shopper frustrated that even 'organic' produce comes wrapped in plastic.",
+    category: "Sustainability",
+    difficulty: "Deep Dive",
+  },
+  {
+    id: 20,
+    title: "Peer Tutoring Match",
+    hmw: "How might we connect struggling students with peer tutors in a scalable, low-cost way?",
+    context: "Professional tutoring costs $40-80/hour, putting it out of reach for most families. Meanwhile, high-performing students could benefit from teaching what they know.",
+    persona: "A 10th grader failing math whose parents can't afford private tutoring.",
+    category: "Education",
+    difficulty: "Medium",
+  },
+];

@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        badge: {
+          quick: "hsl(var(--badge-quick))",
+          "quick-foreground": "hsl(var(--badge-quick-foreground))",
+          medium: "hsl(var(--badge-medium))",
+          "medium-foreground": "hsl(var(--badge-medium-foreground))",
+          deep: "hsl(var(--badge-deep))",
+          "deep-foreground": "hsl(var(--badge-deep-foreground))",
+        },
+        star: "hsl(var(--star))",
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
