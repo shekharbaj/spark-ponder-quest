@@ -77,7 +77,7 @@ const Index = () => {
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-1">
             <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Problem Bank
+              Challenge Bank
             </h1>
             <p className="text-base text-muted-foreground">
               {problems.length} design thinking challenges to spark your next breakthrough.
@@ -97,7 +97,7 @@ const Index = () => {
                 type="text"
                 value={search}
                 onChange={(e) => { setSearch(e.target.value); setRandomPick(null); }}
-                placeholder="Search problems…"
+                placeholder="Search challenges…"
                 className="w-full rounded-lg border border-input bg-background py-2 pl-9 pr-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
               />
             </div>
@@ -179,13 +179,13 @@ const Index = () => {
 
         {displayed.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-20 text-center">
-            <p className="text-lg font-medium text-muted-foreground">No problems found</p>
+            <p className="text-lg font-medium text-muted-foreground">No challenges found</p>
             <p className="text-sm text-muted-foreground">Try adjusting your filters or search query.</p>
           </div>
         ) : (
           <>
             <p className="mb-4 text-sm text-muted-foreground">
-              Showing {displayed.length} of {problems.length} problems
+              Showing {displayed.length} of {problems.length} challenges
             </p>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {displayed.map((problem) => (
